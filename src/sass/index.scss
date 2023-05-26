@@ -1,4 +1,12 @@
-@import './common';
-@import './example';
+@import "./base/reset"; 
+@import './base/common';
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import './sections/header';
 @import './sections/hero';
+@import './sections/оfferings';
+@import './sections/favorites';
+@import './sections/customers';
+@import './sections/subscribe';
+@import './sections/footer';
