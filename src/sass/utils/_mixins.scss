@@ -1,0 +1,15 @@
+@mixin section-title-text($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin button($border-width) {
+    border: $border-width solid $policy-text-colo;
+}
+
+@mixin grids-list($gap) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gap;
+}
