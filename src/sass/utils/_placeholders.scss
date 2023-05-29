@@ -1,0 +1,24 @@
+%button-style {
+    background: $button-text-color;
+    border-radius: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.53;
+    color: $main-text-color;
+}
+
+%title-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: $main-text-color;
+}
+
+%text-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: $main-text-color;
+}
