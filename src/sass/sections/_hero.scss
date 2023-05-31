@@ -1,0 +1,19 @@
+.hero-div {
+    width: 502px;
+}
+
+.hero-title {
+    @include section-title-text($font-size: 48px, $line-height: 1.20);
+    margin-bottom: 28px;
+}
+
+.hero-text {
+    @include section-title-text($font-size: 16px, $line-height: 1.5);
+    margin-bottom: 40px
+}
+
+.hero-button {
+    @extend %button-style;
+    padding: 6px 18px;
+    border: none;
+}
