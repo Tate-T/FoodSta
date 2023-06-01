@@ -1,19 +1,77 @@
-.hero-div {
-    width: 502px;
+.hero {
+    padding-top: 159px;
+    padding-bottom: 0;
+    position: relative;
+    width: 1278px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-div_description {
+        width: 502px;
+    }
+
+    &-title {
+        @include section-title-text($font-size: 48px, $line-height: 1.20);
+        margin-bottom: 28px;
+    }
+
+    &-text {
+        @include section-title-text($font-size: 16px, $line-height: 1.5);
+        margin-bottom: 40px
+    }
+
+    &-button {
+        @extend %button-style;
+        padding: 6px 18px;
+        border: none;
+        background-color: $button-text-color;
+        width: 98px;
+        height: 32px;
+    }
+
+    &-div {
+        display: flex;
+        position: static;
+        width: 1278px;
+    }
+
+    &-div_img {
+        display: flex;
+        width: 580px;
+        height: 580px;
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        border-radius: 50%;
+        border: 26px solid $bg-color2;
+    }
+
+    &-button_svg {
+        width: 48px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        background: $bg-color1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-div_svg {
+        position: absolute;
+        right: 300px;
+        top: 280px;
+
+    }
 }
 
-.hero-title {
-    @include section-title-text($font-size: 48px, $line-height: 1.20);
-    margin-bottom: 28px;
+.button-left {
+    position: absolute;
+    left: -308px
 }
 
-.hero-text {
-    @include section-title-text($font-size: 16px, $line-height: 1.5);
-    margin-bottom: 40px
-}
-
-.hero-button {
-    @extend %button-style;
-    padding: 6px 18px;
-    border: none;
+.button-right {
+    position: absolute;
+    right: -299px;
 }
