@@ -27,6 +27,12 @@
         background-color: $button-text-color;
         width: 98px;
         height: 32px;
+        transition: all cubic-bezier(.06,.46,.6,.38) 0.3s;
+
+        &:hover {
+            background-color: $button-hover-color;
+            transform: scale(1.1);
+        }
     }
 
     &-div {
