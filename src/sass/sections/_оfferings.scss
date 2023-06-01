@@ -44,6 +44,12 @@
         @extend %button-style;
         padding: 6px 18px;
         @include button($bg-color1, $border-width: 2px);
+        transition: all cubic-bezier(.06,.46,.6,.38) 0.3s;
+
+        &:hover {
+            border: $policy-hover-color solid 2px;
+            transform: scale(1.1);
+        }
     }
 
     &-div_svg {
