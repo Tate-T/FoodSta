@@ -1,0 +1,110 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+* {
+  font-family: "Roboto";
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.offerings-button, .hero-button {
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.53;
+  color: #2C2C2C;
+}
+
+.hero-div {
+  width: 502px;
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.hero-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  padding: 6px 18px;
+  border: none;
+}
+
+.offerings {
+  padding-top: 231px;
+  padding-bottom: 43px;
+  background-image: url(../images/img/offerings-section/background.png);
+  background-size: 100% 824px;
+  background-repeat: no-repeat;
+}
+.offerings-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offerings-title {
+  font-size: 42px;
+  line-height: 1.19;
+}
+.offerings-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.offerings-subdiv {
+  width: 550px;
+  background-image: url(../images/img/offerings-section/background-apple.png);
+  background-repeat: no-repeat;
+  margin-right: 90px;
+}
+.offerings-subdiv2 {
+  width: 573px;
+}
+.offerings-list {
+  display: flex;
+}
+.offerings-button {
+  padding: 6px 18px;
+  background: #FEFEFE;
+  border: 2px solid #7EB101;
+}/*# sourceMappingURL=index.css.map */

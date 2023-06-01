@@ -3,8 +3,9 @@
     line-height: $line-height;
 }
 
-@mixin button($border-width) {
-    border: $border-width solid $policy-text-colo;
+@mixin button($background-color, $border-width) {
+    background: $background-color;
+    border: $border-width solid $policy-text-color;
 }
 
 @mixin grids-list($gap) {
