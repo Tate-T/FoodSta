@@ -1,0 +1,85 @@
+.offerings {
+    padding-top: 231px;
+    padding-bottom: 43px;
+    background-image: url(../images/img/offerings-section/background.png);
+    background-size: 100% 824px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-div {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 90px;
+    }
+
+    &-title {
+        @include section-title-text($font-size: 42px, $line-height: 1.19);
+        @extend %title-style;
+    }
+
+    &-text {
+        @include section-title-text($font-size: 16px, $line-height: 1.5);
+        @extend %text-style;
+        margin: 20px 0 40px 0;
+
+    }
+
+    &-subdiv {
+        width: 550px;
+    }
+
+    &-subdiv2 {
+        width: 573px;
+    }
+
+    &-list {
+        display: flex;
+    }
+
+    &-button {
+        @extend %button-style;
+        padding: 6px 18px;
+        @include button($bg-color1, $border-width: 2px);
+    }
+
+    &-div_svg {
+        width: 48px;
+        height: 48px;
+        background-color: $bg-color1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    &_icon {
+    fill: $policy-text-color;
+    }
+
+    &_subtitle {
+        @extend %title-style;
+        @include section-title-text($font-size: 18px, $line-height: 1.38);
+        margin: 8px 0 16px 0;
+    }
+
+    &_subtext {
+        @extend %text-style;
+        @include section-title-text($font-size: 14px, $line-height: 1.5);
+    }
+
+    &-item {
+        margin-right: 67px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-list {
+        margin-bottom: 32px;
+    }
+}
