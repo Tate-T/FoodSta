@@ -28,6 +28,7 @@ img {
 .container {
   width: 100%;
   padding: 0 15px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -50,25 +51,93 @@ img {
   color: #2C2C2C;
 }
 
-.hero-div {
-  width: 502px;
+.offerings_subtitle, .offerings-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  color: #2C2C2C;
 }
 
+.offerings_subtext, .offerings-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  color: #2C2C2C;
+}
+
+.hero {
+  padding-top: 159px;
+  padding-bottom: 0;
+  position: relative;
+  width: 1278px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-div_description {
+  width: 502px;
+}
 .hero-title {
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 28px;
 }
-
 .hero-text {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 40px;
 }
-
 .hero-button {
   padding: 6px 18px;
   border: none;
+  background-color: #BBF330;
+  width: 98px;
+  height: 32px;
+  transition: all cubic-bezier(0.06, 0.46, 0.6, 0.38) 0.3s;
+}
+.hero-button:hover {
+  background-color: #B5FF00;
+  transform: scale(1.1);
+}
+.hero-div {
+  display: flex;
+  position: static;
+  width: 1278px;
+}
+.hero-div_img {
+  display: flex;
+  width: 580px;
+  height: 580px;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  border-radius: 50%;
+  border: 26px solid #FFE550;
+}
+.hero-button_svg {
+  width: 48px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: #FEFEFE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-div_svg {
+  position: absolute;
+  right: 300px;
+  top: 280px;
+}
+
+.button-left {
+  position: absolute;
+  left: -308px;
+}
+
+.button-right {
+  position: absolute;
+  right: -299px;
 }
 
 .offerings {
@@ -77,11 +146,17 @@ img {
   background-image: url(../images/img/offerings-section/background.png);
   background-size: 100% 824px;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .offerings-div {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
 }
 .offerings-title {
   font-size: 42px;
@@ -90,12 +165,10 @@ img {
 .offerings-text {
   font-size: 16px;
   line-height: 1.5;
+  margin: 20px 0 40px 0;
 }
 .offerings-subdiv {
   width: 550px;
-  background-image: url(../images/img/offerings-section/background-apple.png);
-  background-repeat: no-repeat;
-  margin-right: 90px;
 }
 .offerings-subdiv2 {
   width: 573px;
@@ -107,4 +180,47 @@ img {
   padding: 6px 18px;
   background: #FEFEFE;
   border: 2px solid #7EB101;
+  transition: all cubic-bezier(0.06, 0.46, 0.6, 0.38) 0.3s;
+}
+.offerings-button:hover {
+  border: #597D00 solid 2px;
+  transform: scale(1.1);
+}
+.offerings-div_svg {
+  width: 48px;
+  height: 48px;
+  background-color: #FEFEFE;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offerings_icon {
+  fill: #7EB101;
+}
+.offerings_subtitle {
+  font-size: 18px;
+  line-height: 1.38;
+  margin: 8px 0 16px 0;
+}
+.offerings_subtext {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.offerings-item {
+  margin-right: 67px;
+}
+.offerings-item:last-child {
+  margin-right: 0;
+}
+.offerings-list {
+  margin-bottom: 32px;
+}
+
+.footer {
+  padding-top: 64px;
+  background-image: url(../../images/img/footer-section/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=index.css.map */
