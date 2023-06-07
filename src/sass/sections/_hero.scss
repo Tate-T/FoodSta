@@ -1,23 +1,73 @@
 .hero {
-    padding-top: 159px;
-    padding-bottom: 0;
-    position: relative;
-    width: 1278px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        width: 478px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+        position: relative;
+        width: 766px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 159px;
+        width: 1278px;
+    }
 
     &-div_description {
-        width: 502px;
+        @media screen and (min-width: 480px) {
+            width: 280px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 537px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 502px;
+        }
     }
 
     &-title {
-        @include section-title-text($font-size: 48px, $line-height: 1.20);
-        margin-bottom: 28px;
+        @extend %title-style;
+
+        @media screen and (min-width: 480px) {
+            @include section-title-text($font-size: 28px, $line-height: 1.17);
+            margin-bottom: 28px;
+        }
+
+        @media screen and (min-width: 768px) {
+            @include section-title-text($font-size: 42px, $line-height: 1.19);
+            margin-bottom: 44px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            @include section-title-text($font-size: 48px, $line-height: 1.20);
+            margin-bottom: 28px;
+        }
     }
 
     &-text {
-        @include section-title-text($font-size: 16px, $line-height: 1.5);
-        margin-bottom: 40px
+        @extend %text-style;
+
+        @media screen and (min-width: 480px) {
+            @include section-title-text($font-size: 14px, $line-height: 1.5);
+            margin-bottom: 28px;
+        }
+
+        @media screen and (min-width: 768px) {
+            @include section-title-text($font-size: 16px, $line-height: 1.5);
+            margin-bottom: 40px;
+            width: 336px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 502px;
+        }
     }
 
     &-button {
@@ -27,7 +77,7 @@
         background-color: $button-text-color;
         width: 98px;
         height: 32px;
-        transition: all cubic-bezier(.06,.46,.6,.38) 0.3s;
+        transition: all cubic-bezier(.06, .46, .6, .38) 0.3s;
 
         &:hover {
             background-color: $button-hover-color;
@@ -36,48 +86,123 @@
     }
 
     &-div {
-        display: flex;
-        position: static;
-        width: 1278px;
+        @media screen and (min-width: 480px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            justify-content: start;
+        }
+
+        @media screen and (min-width: 1280px) {
+            position: static;
+            width: 1278px;
+        }
+
     }
 
     &-div_img {
-        display: flex;
-        width: 580px;
-        height: 580px;
-        position: absolute;
-        right: 14px;
-        top: 14px;
-        border-radius: 50%;
-        border: 26px solid $bg-color2;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            width: 320px;
+            height: 320px;
+            position: absolute;
+            right: 30px;
+            top: 150px;
+            margin: 0;
+            border-radius: 50%;
+            border: 14px solid $bg-color2;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 580px;
+            height: 580px;
+            right: 14px;
+            top: 14px;
+            position: absolute;
+            border: 26px solid $bg-color2;
+        }
+
     }
 
     &-button_svg {
-        width: 48px;
-        height: 40px;
-        border-radius: 8px;
-        border: none;
-        background: $bg-color1;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @media screen and (min-width: 768px) {
+            width: 34px;
+            height: 28px;
+            border-radius: 4px;
+            border: none;
+            background: $bg-color1;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 48px;
+            height: 40px;
+            border-radius: 8px;
+        }
+
     }
 
     &-div_svg {
-        position: absolute;
-        right: 300px;
-        top: 280px;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
 
+        @media screen and (min-width: 768px) {
+            position: absolute;
+            right: 300px;
+            top: 297px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            position: absolute;
+            right: 300px;
+            top: 280px;
+        }
+    }
+
+    &-icon {
+        @media screen and (min-width: 768px) {
+            height: 12px;
+            width: 20px;
+        }
+        @media screen and (min-width: 1280px) {
+            height: 17px;
+            width: 29px;
+        }
     }
 }
 
 .button-left {
-    position: absolute;
-    left: -308px
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        left: -64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        left: -308px;
+    }
+
 }
 
 .button-right {
-    position: absolute;
-    right: -299px;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        right: -284px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        right: -299px;
+    }
+
 }
