@@ -2,11 +2,18 @@
     <div class="container">
         <div class="offerings-div">
             <div class="offerings-subdiv">
-                <img src="./images/img/offerings-section/apple.png" alt="apple" class="offerings-img">
+                <picture>
+                    <source srcset="./images/img/offerings-section/apple-desktop.png" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/offerings-section/apple-tablet.png" media="(min-width: 768px)" />
+                    <source srcset="./images/img/offerings-section/apple-mobile.png" media="(max-width: 767px)" />
+                    <img src="./images/img/offerings-section/apple-mobile.png" alt="apple" class="offerings-img">
+                </picture>
             </div>
             <div class="offerings-subdiv2">
                 <h2 class="offerings-title">What’s Special About Our Offerings</h2>
-                <p class="offerings-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                <p class="offerings-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                    enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                    commodo diam libero vitae erat.</p>
                 <ul class="offerings-list">
                     <li class="offerings-item">
                         <div class="offerings-div_svg">
@@ -15,7 +22,8 @@
                             </svg>
                         </div>
                         <h3 class="offerings_subtitle">Fasest Delivery</h3>
-                        <p class="offerings_subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        <p class="offerings_subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim in eros.</p>
                     </li>
                     <li class="offerings-item">
                         <div class="offerings-div_svg">
@@ -24,10 +32,18 @@
                             </svg>
                         </div>
                         <h3 class="offerings_subtitle">Easy To Order</h3>
-                        <p class="offerings_subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        <p class="offerings_subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim in eros.</p>
                     </li>
                 </ul>
-                <button type="button" class="offerings-button">Order Now</button>
+                <div class="offerings-button_div">
+                    <button type="button" class="offerings-button">Order Now</button>
+                    <a href="#" class="offerings-links">Read More
+                        <svg class="offerings-icon_arrow" width="13.67" height="13.67">
+                            <use href="./images/symbol-defs.svg#offerings-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
