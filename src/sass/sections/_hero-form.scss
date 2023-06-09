@@ -1,0 +1,79 @@
+.form {
+    padding: 32px;
+    position: absolute;
+    // z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: $bg-color2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 30px;
+    width: 458px;
+    height: 449px;
+
+    &-title {
+        @extend %title-style;
+        @include section-title-text($font-size: 24px, $line-height: 1.20);
+        text-align: center;
+    }
+
+    &-text {
+        @extend %text-style;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    &-close_button {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        transition: 0.2s;
+    }
+
+    &-input {
+        background: #FFFFFF;
+        border: 1px solid rgba(18, 18, 18, 0.12);
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        width: 394px;
+        height: 48px;
+        padding: 14px 12px;
+    }
+    
+
+    &-item {
+        margin: 24px 0;
+
+        &:first-child {
+            margin-top: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 32px;
+        }
+    }
+
+    &-button {
+        margin: 0 144px;
+        width: 106px;
+        height: 40px;
+        @extend %button-style;
+        padding: 6px 18px;
+        @include button($bg-color1, $border-width: 2px);
+    }
+}
+
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(94, 99, 99, 0.7);
+    z-index: 2;
+    transition: 0.4s;
+}
