@@ -1,7 +1,7 @@
 .form {
     padding: 32px;
     position: absolute;
-    // z-index: 3;
+    z-index: 3;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -24,14 +24,23 @@
     }
 
     &-close_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 12px;
         right: 12px;
         width: 32px;
         height: 32px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: none;
         border-radius: 50%;
-        transition: 0.2s;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        transition: all cubic-bezier(.06, .46, .6, .38) 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
 
     &-input {
@@ -42,8 +51,13 @@
         width: 394px;
         height: 48px;
         padding: 14px 12px;
+        
+        &:hover {
+            cursor: pointer;
+            border: 1px solid $policy-text-color;
+        }
     }
-    
+
 
     &-item {
         margin: 24px 0;
@@ -64,6 +78,13 @@
         @extend %button-style;
         padding: 6px 18px;
         @include button($bg-color1, $border-width: 2px);
+        transition: all cubic-bezier(.06, .46, .6, .38) 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $button-text-color;
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -76,4 +97,9 @@
     background: rgba(94, 99, 99, 0.7);
     z-index: 2;
     transition: 0.4s;
+}
+
+.is-hidden-form {
+    opacity: 0;
+    pointer-events: none;
 }
