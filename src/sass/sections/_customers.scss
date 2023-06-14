@@ -1,0 +1,59 @@
+.customers{
+    background-image: url(../images/customers-background-mobile@1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/customers-background-tablet@1x.webp);
+        height: 544px;
+        padding-top: 60px;
+    }
+}
+.customers__title{
+}
+.customers__description{
+    margin-top: 20px;
+}
+.customers__list{
+    margin-top: 30px;
+}
+.customers__item{
+    width: 100%;
+    max-width: 440px;
+    border-radius: 0 30px 30px 30px;
+    padding: 8px;
+}
+.customers__item:nth-child(1){
+    height: 247px;
+    margin-bottom: 24px;
+}
+.customers__item:nth-child(2){
+    height: 228px;
+}
+.stars__list{
+    width: 101px;
+}
+.stars__star{
+    width: 17px; 
+    height: 16px;
+}
+.customers__comment{
+    margin-top: 28px;
+    padding-bottom: 40px;
+}
+.customers__user{
+    border-right: 0.854167px solid #7EB101;
+    width: 159px;
+    height: 50px;
+}
+.customers__img{
+    width: 48px; 
+    height: 48px;
+}
+.customers__name{
+    margin-left:16px;
+}
+.customers__nickname{
+    margin-left:16px;
+}
