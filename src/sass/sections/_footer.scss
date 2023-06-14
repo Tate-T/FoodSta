@@ -1,0 +1,145 @@
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+* {
+    font-family: "Roboto";
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    padding-top: 118px;
+
+    & .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        margin-top: 68px;
+        margin-left: 148px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2C2C2C;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 28px;
+    }
+}
+
+.policy {
+    margin-top: 80px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration-line: underline;
+        color: #7EB101;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.subscribe {
+    margin-top: 100px;
+    margin-left: 320px;
+
+    &__input {
+
+        border: 1px solid #FFE550;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 30px;
+        width: 279px;
+        height: 42px;
+        background-color: transparent;
+        padding-left: 12px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 103px;
+        height: 42px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        color: #2C2C2C;
+        margin-left: 12px;
+        border: 0.854167px solid #7EB101;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration-line: underline;
+        color: #7EB101;
+    }
+
+    &__text {
+        margin-top: 12px;
+    }
+}
+
+.rights {
+    margin-top: 80px;
+    margin-left: 780px;
+}
