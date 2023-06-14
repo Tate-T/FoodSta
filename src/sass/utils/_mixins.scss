@@ -14,3 +14,11 @@
     justify-content: center;
     gap: $gap;
 }
+
+@mixin text-style($font-weight, $font-size, $line-height, $color: $main-text-color) {
+    font-family: 'Roboto';
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}

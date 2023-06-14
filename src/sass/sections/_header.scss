@@ -1,0 +1,42 @@
+.header{
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__item{
+        margin-right: 28px;
+        padding-top: 28px;
+        &:active{
+            color: $main-text-color;
+        }
+        &:hover{
+            color: $button-text-color;
+            text-decoration: underline;
+        }
+    }
+    &__link{
+        color: aqua;
+        background-color: beige;
+    }
+    &__svg{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 16px;
+        float: left
+    }
+    &__button{
+        @extend %button-style;
+        padding: 6px 18px;
+        border: none;
+        background-color: $button-text-color;
+        width: 98px;
+        height: 32px;
+        transition: all cubic-bezier(.06, .46, .6, .38) 0.3s;
+
+        &:hover {
+            background-color: $button-hover-color;
+            transform: scale(1.1);
+        }
+    }
+}
