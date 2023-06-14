@@ -1,0 +1,99 @@
+.subscribe{
+    padding: 52px 0 60px;
+    @media screen and (min-width: 768px){
+        padding: 82px 0 100px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 50px;
+    }
+    &>.container{
+        position: relative;
+    }
+    &__img{
+        position: absolute;
+        width: 280px;
+        height: 78px;
+        top: -95px;
+        @media screen and (min-width: 768px) {
+            height: 136px;
+            width: 281px;
+            top: -156px;
+            right: 32px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 608px;
+            height: 266px;
+            top: -116px;
+            right: 16px;
+        }
+    }
+    &__title{
+        @include text-style(700,28px,1.2);
+        max-width: 440px;
+        @media screen and (min-width: 768px) {
+            font-size: 42px;
+            max-width: 656px;
+        }
+        @media screen and (min-width: 1280px) {
+            position: absolute;
+            top: -90px;
+        }
+    }
+    &__description{
+        @include text-style(400, 14px, 1.14);
+        margin-top: 20px;
+        max-width: 440px;
+        @media screen and (min-width: 768px) {
+            @include text-style(400, 16px, 1.5);
+            max-width: 656px;
+        }
+    }
+    &__form{
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            width: 519px;
+            margin-top: 24px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 529px;
+        }
+    }
+    &__input{
+        margin-top: 40px;
+        width: 279px;
+        height: 42px;        
+        border: 0.854167px solid $bg-color2;
+        border-radius: 30px;
+        padding-left: 20px;
+        @include text-style(400, 14px, 1.5, $main-text-color);
+        &::placeholder{
+            @include text-style(400, 12px, 1.5, $iput-placeholder-color);
+        }
+        @media screen and (min-width: 768px) {
+            padding-left: 11px;
+            width: 394px;
+            margin-top: 0;
+        }
+    }
+    &__button{
+        @include text-style(500, 13px, 1.5);
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0 auto;
+        width: 103px;
+        height: 42px;
+        background: $button-text-color;
+        transition: all 0.2s ease-in-out;
+    
+        &:active {
+            background: $button-hover-color;
+            transition: all 0.2s ease-in-out;
+        }
+        border: 0;
+        border-radius: 30px;
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+}
