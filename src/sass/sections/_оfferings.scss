@@ -1,5 +1,5 @@
 .offerings {
-    background-image: url(../images/img/offerings-section/offerings-mobile.png);
+    background-image: url(./images/img/offerings-section/offerings-mobile.png);
     padding-bottom: 43px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@
 
 
     @media screen and (min-width: 768px) {
-        background-image: url(../images/img/offerings-section/offerings-tablet.png);
+        background-image: url(./images/img/offerings-section/offerings-tablet.png);
         height: 1140px;
         padding-bottom: 88px;
         padding-top: 115px;
@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
         height: 824px;
-        background-image: url(../images/img/offerings-section/offerings-desktop.png);
+        background-image: url(./images/img/offerings-section/offerings-desktop.png);
     }
 
     &-div {
