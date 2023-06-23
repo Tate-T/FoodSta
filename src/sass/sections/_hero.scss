@@ -1,11 +1,9 @@
 .hero {
-    @media screen and (min-width: 480px) {
         padding-top: 60px;
         padding-bottom: 50px;
-        width: 478px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
-    }
 
     @media screen and (min-width: 768px) {
         padding-bottom: 0;
@@ -19,9 +17,7 @@
     }
 
     &-div_description {
-        @media screen and (min-width: 480px) {
             width: 280px;
-        }
 
         @media screen and (min-width: 768px) {
             width: 537px;
@@ -34,11 +30,8 @@
 
     &-title {
         @extend %title-style;
-
-        @media screen and (min-width: 480px) {
             @include section-title-text($font-size: 28px, $line-height: 1.17);
             margin-bottom: 28px;
-        }
 
         @media screen and (min-width: 768px) {
             @include section-title-text($font-size: 42px, $line-height: 1.19);
@@ -53,11 +46,8 @@
 
     &-text {
         @extend %text-style;
-
-        @media screen and (min-width: 480px) {
             @include section-title-text($font-size: 14px, $line-height: 1.5);
             margin-bottom: 28px;
-        }
 
         @media screen and (min-width: 768px) {
             @include section-title-text($font-size: 16px, $line-height: 1.5);
@@ -86,10 +76,8 @@
     }
 
     &-div {
-        @media screen and (min-width: 480px) {
             display: flex;
             justify-content: center;
-        }
 
         @media screen and (min-width: 768px) {
             justify-content: start;
