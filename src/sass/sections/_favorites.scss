@@ -1,19 +1,30 @@
-.favorites__title{
+.favorites {
+    padding: 100px 0;
+}
+
+.favorites__title {
     text-align: center;
     font-weight: 700;
     font-size: 42px;
     line-height: 49px;
+    margin-bottom: 20px;
+}
+
+.favorites__description {
     text-align: center;
 }
 
-.favorites__description{
-    
-    text-align: center;
-}
 .favorites__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-left: 56px;
-    gap: 111px;
-    margin-top: 81px;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.favorites__item:nth-child(n+4) {
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
