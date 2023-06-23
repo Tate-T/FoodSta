@@ -1,42 +1,83 @@
 .header{
-    &__list{
+    & .container {
         display: flex;
-        justify-content: flex-end;
         align-items: center;
-    }
-    &__item{
-        margin-right: 28px;
-        padding-top: 28px;
-        &:active{
-            color: $main-text-color;
+        justify-content: space-between;
+
+        height: 72px;
+
+        width: 100%;
+
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
         }
-        &:hover{
-            color: $button-text-color;
-            text-decoration: underline;
+
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            justify-content: baseline;
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;
         }
     }
-    &__link{
-        color: aqua;
-        background-color: beige;
+
+    &__list {
+        display: none;
+        width: 319px;
+        margin-left: 191px;
+        justify-content: space-between;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 735px;
+        }
     }
-    &__svg{
-        display: flex;
-        margin-top: 10px;
-        margin-left: 16px;
-        float: left
-    }
-    &__button{
-        @extend %button-style;
-        padding: 6px 18px;
+
+    &__button-modal {
+        display: block;
+        color: white;
         border: none;
-        background-color: $button-text-color;
-        width: 98px;
-        height: 32px;
-        transition: all cubic-bezier(.06, .46, .6, .38) 0.3s;
+        background-color: white;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        @include text-style(400, 14px, 1.14, #000);
+        transition: all 0.5s ease-in;
 
         &:hover {
-            background-color: $button-hover-color;
-            transform: scale(1.1);
+            color: $button-text-color;
+            text-decoration: underline;
+            transition: all 0.5s ease-in;
+        }
+    }
+
+    &__button {
+        @include text-style(500, 13px, 1.5);
+        background: $button-text-color;
+        border-radius: 30px;
+        width: 98px;
+        height: 32px;
+        margin-left: 30px;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        transition: all 0.5s ease-in;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+        &:hover{
+            background: $button-hover-color;
+            transition: all 0.5s ease-in;
         }
     }
 }
