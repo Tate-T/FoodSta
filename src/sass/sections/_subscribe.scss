@@ -9,84 +9,73 @@
     &>.container{
         position: relative;
     }
-    &__img{
-        position: absolute;
-        width: 280px;
-        height: 78px;
-        top: -95px;
-        @media screen and (min-width: 768px) {
-            height: 136px;
-            width: 281px;
-            top: -156px;
-            right: 32px;
-        }
-        @media screen and (min-width: 1280px) {
-            width: 608px;
-            height: 266px;
-            top: -116px;
-            right: 16px;
-        }
-    }
-    &__title{
-        @include text-style(700,28px,1.2);
-        max-width: 440px;
-        @media screen and (min-width: 768px) {
-            font-size: 42px;
-            max-width: 656px;
-        }
-        @media screen and (min-width: 1280px) {
-            position: absolute;
-            top: -90px;
-        }
-    }
-    &__description{
-        @include text-style(400, 14px, 1.14);
-        margin-top: 20px;
-        max-width: 440px;
-        @media screen and (min-width: 768px) {
-            @include text-style(400, 16px, 1.5);
-            max-width: 656px;
-        }
-    }
+
     &__form{
         @media screen and (min-width: 768px) {
-            display: flex;
             justify-content: space-between;
             width: 519px;
             margin-top: 24px;
+            display: flex;
         }
         @media screen and (min-width: 1280px) {
             width: 529px;
         }
     }
+
+    &__description{
+        @include text-style(400, 14px, 1.14);
+        max-width: 440px;
+        margin-top: 20px;
+        @media screen and (min-width: 768px) {
+            @include text-style(400, 16px, 1.5);
+            max-width: 656px;
+        }
+        @media screen and (min-width: 1280px){
+            margin-top: 0;
+        }
+    }
+
     &__input{
-        margin-top: 40px;
-        width: 279px;
-        height: 42px;        
-        border: 0.854167px solid $bg-color2;
         border-radius: 30px;
+        margin-top: 40px;
+        width: 100%;
+        max-width: 448px;
         padding-left: 20px;
-        @include text-style(400, 14px, 1.5, $main-text-color);
+        border: 0.854167px solid $bg-color2;
+        height: 42px;   
+        @include text-style(500, 14px, 1.5, $main-text-color);
         &::placeholder{
             @include text-style(400, 12px, 1.5, $iput-placeholder-color);
         }
         @media screen and (min-width: 768px) {
-            padding-left: 11px;
-            width: 394px;
             margin-top: 0;
+            width: 394px;
+            padding-left: 11px;
         }
     }
+
+    &__title{
+        @include text-style(700,28px,1.2);
+        max-width: 440px;
+        @media screen and (min-width: 768px) {
+            max-width: 656px;
+            font-size: 42px;
+        }
+        @media screen and (min-width: 1280px) {
+            top: -70px;
+            position: absolute;
+        }
+    }
+
     &__button{
         @include text-style(500, 13px, 1.5);
-        justify-content: center;
-        align-items: center;
+        transition: all 0.2s ease-in-out;
+        background: $button-text-color;
         margin: 20px 0 0 auto;
         width: 103px;
         height: 42px;
-        background: $button-text-color;
-        transition: all 0.2s ease-in-out;
     
-        &:active {
+        &:hover {
             background: $button-hover-color;
             transition: all 0.2s ease-in-out;
         }
@@ -94,6 +83,30 @@
         border-radius: 30px;
         @media screen and (min-width: 768px) {
             margin-top: 0;
+        }
+    }
+
+    &__img{
+        width: 161px;
+        height: 78px;
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        top: -95px;
+        @media screen and (min-width: 768px) {
+            height: 136px;
+            left: auto;
+            margin: 0;
+            width: 281px;
+            top: -156px;
+            right: 32px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 556px;
+            top: -116px;
+            right: 16px;
+            height: 266px;
         }
     }
 }
