@@ -1,0 +1,2 @@
+(()=>{let e={openModalBtn:document.querySelector("[data-open-modal]"),closeModalBtn:document.querySelector("[data-close-modal]"),backdrop:document.querySelector("[data-backdrop-modal]")};function o(){e.backdrop.classList.toggle("is-hidden-modal"),"hidden"==document.body.style.overflow?document.body.style.overflow="visible":document.body.style.overflow="hidden"}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o),e.backdrop.addEventListener("click",function(){console.log("Це клік в бекдроп")})})();
+//# sourceMappingURL=index.bea527a2.js.map
