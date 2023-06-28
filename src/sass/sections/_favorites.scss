@@ -1,17 +1,36 @@
 .favorites {
-    padding: 100px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: 1280px) {
+        padding: 100px 0;
+    }
 }
 
 .favorites__title {
+    color: $main-text-color;
     text-align: center;
+    font-size: 28px;
+    font-family: Roboto;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 49px;
     margin-bottom: 20px;
+    width: 280px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 49px;
+        width: 100%;
+    }
 }
 
 .favorites__description {
     text-align: center;
+    color: $main-text-color;
+    font-size: 14px;
+    font-family: Roboto;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .favorites__list {
@@ -23,8 +42,40 @@
 }
 
 .favorites__item:nth-child(n+4) {
-    
     @media screen and (max-width: 767px) {
         display: none;
+    }
+}
+
+.favorites__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 282px;
+    border-radius: 139.658px;
+    border: 11px solid $bg-color2;
+    transition: all cubic-bezier(.06, .46, .6, .38) 0.3s;
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        height: 338px;
+        border-radius: 167.59px;
+        border: 14px solid $bg-color2;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 395px;
+        height: 397px;
+        border-radius: 197.5px;
+    }
+}
+
+.favorites__item:hover {
+    border: 11px solid $button-text-color;
+    transform: rotate(1turn) scale(1.1);
+
+    @media screen and (min-width: 768px) {
+        border: 14px solid $button-text-color;
     }
 }
