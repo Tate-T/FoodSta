@@ -1,52 +1,60 @@
-.subscribe{
+.subscribe {
     padding: 52px 0 60px;
-    @media screen and (min-width: 768px){
+
+    @media screen and (min-width: 768px) {
         padding: 82px 0 100px;
     }
+
     @media screen and (min-width: 1280px) {
         padding-top: 50px;
     }
-    &>.container{
+
+    &>.container {
         position: relative;
     }
 
-    &__form{
+    &__form {
         @media screen and (min-width: 768px) {
             justify-content: space-between;
             width: 519px;
             margin-top: 24px;
             display: flex;
         }
+
         @media screen and (min-width: 1280px) {
             width: 529px;
         }
     }
 
-    &__description{
+    &__description {
         @include text-style(400, 14px, 1.14);
         max-width: 440px;
         margin-top: 20px;
+
         @media screen and (min-width: 768px) {
             @include text-style(400, 16px, 1.5);
             max-width: 656px;
         }
-        @media screen and (min-width: 1280px){
+
+        @media screen and (min-width: 1280px) {
             margin-top: 0;
         }
     }
 
-    &__input{
+    &__input {
         border-radius: 30px;
         margin-top: 40px;
         width: 100%;
         max-width: 448px;
         padding-left: 20px;
         border: 0.854167px solid $bg-color2;
-        height: 42px;   
+        height: 42px;
         @include text-style(500, 14px, 1.5, $main-text-color);
-        &::placeholder{
+
+        &::placeholder {
             @include text-style(400, 12px, 1.5, $iput-placeholder-color);
         }
+
         @media screen and (min-width: 768px) {
             margin-top: 0;
             width: 394px;
@@ -54,39 +62,44 @@
         }
     }
 
-    &__title{
-        @include text-style(700,28px,1.2);
+    &__title {
+        @include text-style(700, 28px, 1.2);
         max-width: 440px;
+
         @media screen and (min-width: 768px) {
             max-width: 656px;
             font-size: 42px;
         }
+
         @media screen and (min-width: 1280px) {
             top: -70px;
             position: absolute;
         }
     }
 
-    &__button{
+    &__button {
         @include text-style(500, 13px, 1.5);
         transition: all 0.2s ease-in-out;
         background: $button-text-color;
-        margin: 20px 0 0 auto;
+        margin: 20px 0 0 176px;
         width: 103px;
         height: 42px;
-    
-        &:hover {
-            background: $button-hover-color;
-            transition: all 0.2s ease-in-out;
-        }
         border: 0;
         border-radius: 30px;
+
+        &:hover {
+            background-color: $button-hover-color;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
         @media screen and (min-width: 768px) {
+            margin-left: 0;
             margin-top: 0;
         }
     }
 
-    &__img{
+    &__img {
         width: 161px;
         height: 78px;
         position: absolute;
@@ -94,6 +107,7 @@
         right: 0;
         left: 0;
         top: -95px;
+
         @media screen and (min-width: 768px) {
             height: 136px;
             left: auto;
@@ -102,6 +116,7 @@
             top: -156px;
             right: 32px;
         }
+
         @media screen and (min-width: 1280px) {
             width: 556px;
             top: -116px;
